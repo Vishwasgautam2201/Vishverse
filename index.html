@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#080811">
-<meta name="description" content="Vishverse — the personal portfolio of Vishwas Gautam, a computer science student exploring code, design and creative technology.">
-<title>Vishverse — Vishwas Gautam</title>
+<meta name="description" content="Explore tech gadget recommendations, web development, graphic design and video projects by Vishverse.">
+<title>Vishverse | Tech Gadgets, Web Design & Creative Projects</title>
  
 <style>
  .profile-photo {
@@ -78,6 +78,35 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
 @media(max-width:800px){.hero{grid-template-columns:1fr;gap:25px;padding-top:70px;min-height:auto}.visual{min-height:300px}.about-grid{grid-template-columns:1fr}.skills,.project-grid{grid-template-columns:1fr 1fr}.links{gap:14px}}
 @media(max-width:560px){.nav{min-height:68px}.menu-btn{display:block}.links{display:none;position:absolute;top:68px;left:0;right:0;background:var(--bg);padding:18px 5%;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start}.links.open{display:flex}.hero{padding:65px 0 45px}section{padding:52px 0}.skills,.project-grid{grid-template-columns:1fr}.section-head{align-items:start;flex-direction:column}.float.one{left:-5px;top:20px}.float.two{right:-4px;bottom:15px}.orb{width:245px}.visual{min-height:290px}.panel{padding:22px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+
+/* Gadget recommendation cards */
+#gadgets .grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 28px;
+}
+
+#gadgets .panel {
+  min-width: 0;
+}
+
+#gadgets .btn {
+  margin-top: 12px;
+}
+
+@media (max-width: 800px) {
+  #gadgets .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  #gadgets .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 </style>
 </head>
 <body>
@@ -85,7 +114,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
  <div class="wrap nav">
   <a class="brand" href="#home" aria-label="Vishverse home">Vish<span>verse.</span></a>
   <nav class="links" id="navLinks" aria-label="Main navigation">
-  
+  <a href="#gadgets">Gadgets</a>
 <a href="#about">About</a>
 <a href="#education">Education</a>
 <a href="#skills">Skills</a>
@@ -182,6 +211,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
   <span class="tag">CCC Certificate</span>
 </article>
 </div>
+</div>
 </section>
 
  <section id="skills">
@@ -267,6 +297,7 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
   </div>
 </section>
 
+
 <!-- Gadget Recommendations -->
 <section id="gadgets">
   <div class="wrap">
@@ -280,70 +311,65 @@ footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-s
       <article class="panel">
         <h3>Wireless Earbuds</h3>
         <p>For music, online classes, and everyday use.</p>
-       
-<a
-  class="btn"
-  href="https://www.amazon.in/gp/aw/d/B0HDNXC46S?linkCode=ll2&tag=vishwas2008-21&linkId=3535bda9c52fc2c41938f1a29c58080b&ref_=as_li_ss_tl"
-  target="_blank"
-  rel="sponsored nofollow noopener"
->
-  Check Price on Amazon
-</a>
-
+        <a
+          class="btn"
+          href="https://www.amazon.in/gp/aw/d/B0HDNXC46S?linkCode=ll2&tag=vishwas2008-21&linkId=3535bda9c52fc2c41938f1a29c58080b&ref_=as_li_ss_tl"
+          target="_blank"
+          rel="sponsored nofollow noopener"
+        >Check Price on Amazon</a>
       </article>
 
       <article class="panel">
         <h3>Wireless Mouse</h3>
         <p>A useful accessory for coding and productivity.</p>
-       
-<a
-  class="btn"
-  href="https://www.amazon.in/MS3320W-Wireless-Bluetooth-Exchange-Warranty/dp/B0D1YB9CP6?linkCode=ll2&tag=vishwas2008-21&linkId=d410dff82e035f0a771e9ee2dce803a0&ref_=as_li_ss_tl"
-  target="_blank"
-  rel="sponsored nofollow noopener"
->
-  Check Price on Amazon
-</a>
-
+        <a
+          class="btn"
+          href="https://www.amazon.in/MS3320W-Wireless-Bluetooth-Exchange-Warranty/dp/B0D1YB9CP6?linkCode=ll2&tag=vishwas2008-21&linkId=d410dff82e035f0a771e9ee2dce803a0&ref_=as_li_ss_tl"
+          target="_blank"
+          rel="sponsored nofollow noopener"
+        >Check Price on Amazon</a>
       </article>
 
       <article class="panel">
-        <h3> USB-C Hub</h3>
+        <h3>USB-C Hub</h3>
         <p>Extra connectivity for compatible laptops.</p>
-        <a 
-<a
-  class="btn"
-  href="https://www.amazon.in/Honeywell-Launched-Charging-Devices-Thunderbolt/dp/B0CHBHYLLR?linkCode=ll2&tag=vishwas2008-21&linkId=aa28b3992b0665e8b95596eaf8553601&ref_=as_li_ss_tl"
-  target="_blank"
-  rel="sponsored nofollow noopener"
->
-  Check Price on Amazon
-</a>
-</a>
+        <a
+          class="btn"
+          href="https://www.amazon.in/Honeywell-Launched-Charging-Devices-Thunderbolt/dp/B0CHBHYLLR?linkCode=ll2&tag=vishwas2008-21&linkId=aa28b3992b0665e8b95596eaf8553601&ref_=as_li_ss_tl"
+          target="_blank"
+          rel="sponsored nofollow noopener"
+        >Check Price on Amazon</a>
       </article>
     </div>
 
     <p class="sub">
-      Some links may be affiliate links. As an Amazon Associate
-      I earn from qualifying purchases.
+      Some links are affiliate links. As an Amazon Associate I earn from qualifying purchases.
     </p>
   </div>
 </section>
 
- <section id="contact">
-  <div class="wrap"><div class="panel contact-box reveal"><div class="kicker">Get in touch</div><h2>Have an idea? <span class="gradient">Let's connect.</span></h2><p>I'm always learning and open to connecting with people who enjoy technology and creativity.</p>
-<div class="ctas" style="justify-content:center">
-  <a class="btn primary" href="https://github.com/vishwasgautam2201" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
 
-  <a class="btn" href="https://www.instagram.com/its_vishwasgautam/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
-</div>
-<p style="font-size:.85rem;margin-bottom:0">Social links and email can be added here when you're ready to share them.</p></div></div>
 
-<a href="mailto:vishwasgautam26@gmail.com?subject=Business%20or%20Collaboration%20Inquiry" class="btn">
-  Contact for Business & Collaborations
-</a>
+<section id="contact">
+  <div class="wrap">
+    <div class="panel contact-box reveal">
+      <div class="kicker">Get in touch</div>
+      <h2>Have an idea? <span class="gradient">Let's connect.</span></h2>
+      <p>I'm always learning and open to connecting with people who enjoy technology and creativity.</p>
 
- </section>
+      <div class="ctas" style="justify-content:center">
+        <a class="btn primary" href="https://github.com/vishwasgautam2201" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <a class="btn" href="https://www.instagram.com/its_vishwasgautam/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+        <a class="btn" href="mailto:vishwasgautam26@gmail.com">Email Me ↗</a>
+      </div>
+
+      <p style="font-size:.85rem;margin-bottom:0">
+        Connect with me for creative projects, collaborations and business inquiries.
+      </p>
+    </div>
+  </div>
+</section>
+
  
 <section id="affiliate-disclosure">
   <div class="wrap">
